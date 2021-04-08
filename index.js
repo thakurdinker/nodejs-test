@@ -1,7 +1,8 @@
 const axios = require("axios").default;
 var MongoClient = require("mongodb").MongoClient;
+require("dotenv").config();
 
-const api_key = "536e8d33dd5a453faf0986cb01c34043";
+const api_key = process.env.API_KEY;
 
 let countries = null;
 let random_CountryName = null;
